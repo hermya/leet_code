@@ -1,4 +1,4 @@
-# 1222. Queens That Can Attack the King
+## 1222. Queens That Can Attack the King
 
 You are given a **2D integer array** queens where 
 > queens[i] = [xQueeni, yQueeni] represents the **position of the ith black queen** on the chessboard. 

@@ -1,4 +1,4 @@
-# 1026. Maximum Difference Between Node and Ancestor
+## 1026. Maximum Difference Between Node and Ancestor
 
 Given the root of a binary tree, **find the maximum value v** for which 
 > there exist different nodes a and b where 
