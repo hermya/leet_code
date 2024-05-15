@@ -1,4 +1,4 @@
-## 2810. Faulty Keyboard
+<h2 style="color:#0C9;">2810. Faulty Keyboard</h2>
 
 Your laptop keyboard is faulty, and whenever you type a character 'i' on it, it reverses the string that you have written. Typing other characters works as expected.
 

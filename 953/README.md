@@ -1,4 +1,4 @@
-## 953. Verifying an Alien Dictionary
+<h2 style="color:#0C9;">953. Verifying an Alien Dictionary</h2>
 
 In an alien language, surprisingly, they also use English lowercase letters, but possibly in a different order. The order of the alphabet is some permutation of lowercase letters
 

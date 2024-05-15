@@ -1,4 +1,4 @@
-## 76. Minimum Window Substring
+<h2 style="color:#F00;">76. Minimum Window Substring</h2>
 
 Given two strings **s** and **t** of lengths m and n respectively, return the **minimum window substring** of **s** such that 
 > every character in **t** (including duplicates) is included in the window.
