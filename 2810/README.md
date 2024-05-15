@@ -1,4 +1,4 @@
-## 2180. Faulty Keyboard
+## 2810. Faulty Keyboard
 
 Your laptop keyboard is faulty, and whenever you type a character 'i' on it, it reverses the string that you have written. Typing other characters works as expected.
 
