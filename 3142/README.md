@@ -17,4 +17,4 @@ Return true if all the cells satisfy these conditions, otherwise, return false.
 All the cells in the grid satisfy the conditions.
 </p>
 
-**[leetcode url](https://leetcode.com/problems/sqrtx/description/)**
+**[leetcode url](https://leetcode.com/problems/check-if-grid-satisfies-conditions/description/)**
