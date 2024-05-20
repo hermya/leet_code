@@ -14,8 +14,8 @@ Note:
 <img src="https://assets.leetcode.com/uploads/2024/03/29/3708-tc1.png"></img>
 >**Input**: points = \[[2,2],[-1,-2],[-4,4],[-3,1],[3,-3]], s = "abdca"
 **Output**: 2
-
-<b>Explanation</b>
+<p style="color:#007;">
+<b>Explanation</b><br>
 The square of side length 4 covers two points `points[0]` and `points[1]`
 </p>
 

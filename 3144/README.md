@@ -12,7 +12,8 @@ Return the **minimum** number of substrings that you can partition `s` into.
 >**Input**: s = "fabccddg"
 **Output**: 3
 
-<b>Explanation</b>
+<p style="color:#007;">
+<b>Explanation</b><br>
 We can partition the string s into 3 substrings in one of the following ways: `("fab, "ccdd", "g")`, or `("fabc", "cd", "dg")`.
 </p>
 
