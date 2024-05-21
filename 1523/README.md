@@ -6,7 +6,7 @@ Given two non-negative integers `low` and `high`. Return the count of *odd numbe
 >**Input**: low = 3, high = 7
 **Output**: 3
 
-<p style="color:#077;">
+<p style="color:#007;">
 <b>Explanation</b><br>
 The odd numbers between 3 and 7 are [3,5,7].
 </p>
