@@ -8,4 +8,4 @@ The vowels are `'a'`, `'e'`, `'i'`, `'o'`, and `'u'`, and they can appear in bot
 >**Input**: s = "hello"
 **Output**: "holle"
 
-**[leetcode url](https://leetcode.com/problems/reverse-vowels-of-a-string/description/n)**
+**[leetcode url](https://leetcode.com/problems/reverse-vowels-of-a-string/description/)**
