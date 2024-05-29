@@ -13,4 +13,4 @@ Given an integer array `flowerbed` containing `0`'s and `1`'s, where `0` means e
 You can place only one flower on this flowerbed at position 3, placing any other flower will violate the policy.
 </p>
 
-**[leetcode url](https://leetcode.com/problems/find-the-difference-of-two-arrays/description)**
+**[leetcode url](https://leetcode.com/problems/can-place-flowers/description/)**
