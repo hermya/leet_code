@@ -1,4 +1,4 @@
-<h2 style="color:#F90;">3143. Maximum Points Inside the Square</h2>
+<h2 style="color:#F90;">2390. Removing Stars From a String</h2>
 
 You are given a string `s`, which contains stars `*`.
 
