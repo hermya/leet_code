@@ -8,7 +8,7 @@ Given an array `rooms` where `rooms[i]` is the set of keys that you can obtain i
 
 **EXAMPLE**
 >**Input**: rooms = \[[1,3],[3,0,1],[2],[0]]
-Output: false
+**Output**: false
 <p style="color:#007;">
 <b>Explanation</b><br>
 We can not enter room number 2 since the only key that unlocks it is in that room.
