@@ -10,4 +10,10 @@ The final sorted array should not be returned by the function, but instead be *s
 >**Input**: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
 **Output**: [1,2,2,3,5,6]
 
+<p style="color:#007;">
+<b>Explanation</b><br>
+The arrays we are merging are [1,2,3] and [2,5,6].<br>
+The result of the merge is [<u>1</u>,<u>2</u>,2,<u>3</u>,5,6] with the underlined elements coming from nums1.
+</p>
+
 **[leetcode url](https://leetcode.com/problems/merge-sorted-array/description)**
