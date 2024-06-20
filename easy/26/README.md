@@ -26,7 +26,7 @@ If all assertions pass, then your solution will be **accepted.**
 
 **EXAMPLE**
 >**Input**: nums = [0,0,1,1,1,2,2,3,3,4]
-**Output**: 5, nums = [0,1,2,3,4,_,_,_,_,_]
+**Output**: 5, nums = [0,1,2,3,4,\_,\_,\_,\_,\_]
 
 <p style="color:#007;">
 <b>Explanation</b><br>

@@ -27,7 +27,7 @@ If all assertions pass, then your solution will be **accepted.**
 
 **EXAMPLE**
 >**Input**: nums = [3,2,2,3], val = 3
-**Output**: 2, nums = [2,2,_,_]
+**Output**: 2, nums = [2,2,\_,\_]
 
 <p style="color:#007;">
 <b>Explanation</b><br>
