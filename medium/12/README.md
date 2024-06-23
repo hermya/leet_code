@@ -4,6 +4,9 @@ Seven different symbols represent Roman numerals with the following values:
 
 <table>
 <tr>
+<td>Symbol</td><td>Value</td>
+</tr>
+<tr>
 <td>I</td><td>1</td>
 </tr>
 <tr>
