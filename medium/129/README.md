@@ -22,4 +22,4 @@ The root-to-leaf path 1->3 represents the number 13.<br>
 Therefore, sum = 12 + 13 = 25.<br>
 </p>
 
-**[leetcode url](https://leetcode.com/problems/gas-station/description)**
+**[leetcode url](https://leetcode.com/problems/sum-root-to-leaf-numbers/description/)**
