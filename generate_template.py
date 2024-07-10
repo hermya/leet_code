@@ -18,4 +18,5 @@ else:
 
 os.system("mkdir " + cwd + "\\" + pl + str(pn) + "\"") # make directory with problem number
 sol_path = cwd + "\\" +pl + str(pn) +"\\"
-os.system("touch " + sol_path + "Solution.java\" " + sol_path + "README.md\"") # create files for specific problem number
+os.system("cd. > " + sol_path + "Solution.java\" ") # create files for specific problem number
+os.system("cd. > " + sol_path + "README.md\"") # create files for specific problem number
