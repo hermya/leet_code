@@ -19,7 +19,7 @@ You must implement the functions of the class such that each function works in 
 <p style="color:#007;">
 <b>Explanation</b><br>
 RandomizedSet randomizedSet = new RandomizedSet();<br>
-randomizedSet.insert(1); // Inserts 1 to the set. Returns true as 1 was inserted successfully<br>.
+randomizedSet.insert(1); // Inserts 1 to the set. Returns true as 1 was inserted successfully.<br>
 randomizedSet.remove(2); // Returns false as 2 does not exist in the set.<br>
 randomizedSet.insert(2); // Inserts 2 to the set, returns true. Set now contains [1,2].<br>
 randomizedSet.getRandom(); // getRandom() should return either 1 or 2 randomly.<br>
