@@ -10,7 +10,7 @@ The testcases are generated so that the answer will be less than or equal to `2 
 
 **EXAMPLE**
 ![](https://assets.leetcode.com/uploads/2020/11/04/robot1.jpg)
->**Input**: obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]
+>**Input**: obstacleGrid = \[[0,0,0],[0,1,0],[0,0,0]]
 **Output**: 2
 
 <p style="color:#007;">
