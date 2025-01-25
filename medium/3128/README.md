@@ -1,4 +1,4 @@
-<h2 style="color:#F90;">3143. Maximum Points Inside the Square</h2>
+<h2 style="color:#F90;">3128. Right Triangles</h2>
 
 You are given a 2D boolean matrix `grid`.
 
