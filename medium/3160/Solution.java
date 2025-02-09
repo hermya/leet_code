@@ -1,47 +1,59 @@
+import java.util.Map;
 import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Objects;
-import java.util.Set;
 
 class Solution {
     public int[] queryResults(int limit, int[][] queries) {
+        Map<Integer, Integer> ballToColor = new HashMap<>();
+        Map<Integer, Integer> colorToCount = new HashMap<>();
+
+        int distinct = 0;
         int[] ans = new int[queries.length];
-        var ballMap = new HashMap<Integer, Integer>();
-        var colorMap = new HashMap<Integer, Set<Integer>>();
-        var ctr = 0;
         for (int i = 0; i < queries.length; i++) {
-            var color = queries[i][1];
-            var ball = queries[i][0];
-            var prevColor = ballMap.get(ball);
-            if (Objects.isNull(prevColor)) {
-                ballMap.put(ball, color);
-                var ballSet = colorMap.get(color);
-                if (Objects.isNull(ballSet) || ballSet.isEmpty()) {
-                    ctr++;
-                    colorMap.put(color, new HashSet<>(Set.of(ball)));
+            int ball = queries[i][0];
+            int color = queries[i][1];
+            boolean ballExists = ballToColor.containsKey(ball);
+            boolean colorExists = colorToCount.containsKey(color);
+            if (ballExists) {
+                var prevColor = ballToColor.get(ball);
+                if (prevColor == color) {
+                    // no change
                 } else {
-                    ballSet.add(ball);
+                    var prevVal = colorToCount.get(prevColor);
+                    if (prevVal == 1) {
+                        distinct--;
+                    }
+                    colorToCount.put(prevColor, prevVal - 1);
+                    if (colorToCount.containsKey(color)) {
+                      var val = colorToCount.get(color);
+                        if (val == 0) {
+                            distinct++;
+                            colorToCount.put(color, 1);
+                        } else {
+                            colorToCount.put(color, val + 1);
+                        }
+                    } else {
+                        distinct++;
+                        colorToCount.put(color, 1);
+                    }
                 }
-                ans[i] = ctr;
             } else {
-                ballMap.put(ball, color);
-                var ballSet = colorMap.get(color);                
-                var prevSet = colorMap.get(prevColor);
-                prevSet.remove(ball);
-                if (prevSet.isEmpty()) {
-                    ctr--;
-                }
-                
-                if (Objects.isNull(ballSet) || ballSet.isEmpty()) {
-                    ctr++;
-                    colorMap.put(color, new HashSet<>(Set.of(ball)));
+                if (colorExists) {
+                    var val = colorToCount.get(color);
+                    if (val == 0) {
+                        distinct++;
+                        colorToCount.put(color, 1);
+                    } else {
+                        colorToCount.put(color, val + 1);
+                    }
                 } else {
-                    ballSet.add(ball);
+                    distinct++;
+                    colorToCount.put(color, 1);
                 }
-                ans[i] = ctr;
             }
-            
-            ans[i]=ctr;
+            ballToColor.put(ball, color);
+            ans[i] = distinct;
+            // System.out.println("ball to color -> " + ballToColor);
+            // System.out.println("color to count -> " + colorToCount);
         }
         return ans;
     }
