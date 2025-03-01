@@ -143,6 +143,125 @@ public class MinHeap {
     }
 }
 ```
+```c++
+// With c++
+class PriorityQueue{
+    private:
+    int* pq;
+    int size;
+    int capacity;
+    
+    public:
+    PriorityQueue(int n) {
+        cout<<"Created PQ with size "<<n<<std::endl;
+        this -> capacity = n;
+        this -> size = 0;
+        this -> pq = new int[n];
+    }
+    
+    void tbHeapify(int p){
+        int leftChild = 2*p + 1;
+        int rightChild = 2*p + 2;
+        int parent = pq[p];
+        int left, right;
+        if (leftChild < size) {
+            left = pq[leftChild];
+        } else {
+            left = INT_MAX;
+        }
+        if (rightChild < size) {
+            right = pq[rightChild];
+        } else {
+            right = INT_MAX;
+        }
+        
+        if (parent > left && parent > right) {
+            if (left > right) {
+                int temp = parent;
+                pq[p] = right;
+                pq[rightChild] = temp;
+                tbHeapify(rightChild);
+            } else {
+                int temp = parent;
+                pq[p] = left;
+                pq[leftChild] = temp;
+                tbHeapify(leftChild);
+            }
+        } else if (parent > left) {
+            int temp = parent;
+            pq[p] = left;
+            pq[leftChild] = temp;    
+            tbHeapify(leftChild);
+        } else if (parent > right) {
+            int temp = parent;
+            pq[p] = right;
+            pq[rightChild] = temp;     
+            tbHeapify(rightChild);
+        }
+    }
+    
+    void btHeapify(int child) {
+        int parent = (child - 1)/2;
+        if (parent < 0) {
+            return;
+        }
+        int parEle = pq[parent];
+        int childEle = pq[child];
+        
+        if (parEle > childEle) {
+            int temp = parEle;
+            pq[parent] = childEle;
+            pq[child] = parEle;
+            btHeapify(parent);
+        }
+    }
+    
+    void add(int ele) {
+        pq[size] = ele;
+        size++;
+        btHeapify(size - 1);
+        print();
+    }
+    
+    int pop() {
+        int val = pq[0];
+        size--;
+        pq[0] = pq[size];
+        tbHeapify(0);
+        return val;
+    }
+    
+    int sizeX() {
+        return size;
+    }
+    
+    void print() {
+        for (int i = 0; i < this -> sizeX(); i++) {
+            cout << this -> pq[i] << " "; 
+        }
+        cout << std::endl;
+    }
+    
+};
+
+int main() {
+    std::cout << "Hello World!\n";
+    PriorityQueue pq(10);
+    pq.add(1);    
+    pq.add(6);
+    pq.add(2);
+    pq.add(0);
+    pq.add(8);
+    
+    int m = 5;
+    
+    while (m > 0) {
+        m --;
+        cout << pq.pop() << " ";
+    }
+    cout << std::endl;
+}
+```
 
 **IMPORTANT**
 * Replace the condition that top should be smaller than both it's childs to top should be greater, makes it a max heap
