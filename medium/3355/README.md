@@ -23,7 +23,7 @@ The array will become [0, 0, 0], which is a Zero Array.
 </pre>
 </p>
 
-**EXAMPLE 1**
+**EXAMPLE 2**
 >**Input**: nums = [4,3,2,1], queries = \[[1,3],[0,2]]
 **Output**: false
 <p style="color:#007;">
